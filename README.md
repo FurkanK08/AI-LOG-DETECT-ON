@@ -40,5 +40,4 @@ Bu proje, web sunucusundan alınan log verilerini analiz etmek için bir derin �
 
 Projeyi çalıştırmadan önce, aşağıdaki bağımlılıkları yüklemeniz gerekebilir:
 pip install -r requirements.txt
-Projeyi çalıştırmak için :
-python app.py 
+
