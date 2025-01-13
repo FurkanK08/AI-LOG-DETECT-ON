@@ -1,0 +1,112 @@
+/* Genel stil */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Koyu arka plan */
+    background-image: url("{{ url_for(' static', filename='pexels-akwice-3094799.jpg') }}");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e1e1e1; /* Açık yazı rengi */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* Konteyner ve form tasarımı */
+.container {
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3); /* Yeşil ışıltı */
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid #1a6e41; /* Yeşil çerçeve */
+}
+
+h1 {
+    font-size: 28px;
+    color: #00ff87; /* Neon yeşil başlık */
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="file"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #1a6e41;
+    padding: 12px;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="file"]:hover {
+    background-color: #1a6e41;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #00ff87; /* Neon yeşil buton */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #007a54;
+    transform: scale(1.05); /* Hover etkisi */
+}
+
+/* İndirme linki ve mesaj */
+.prediction-message {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #e1e1e1;
+    background-color: #333;
+    border: 1px solid #00ff87;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.prediction-message a {
+    color: #00ff87;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.prediction-message a:hover {
+    color: #ff4040; /* Kırmızımsı renk hover */
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="file"], button {
+        width: 100%;
+    }
+}
